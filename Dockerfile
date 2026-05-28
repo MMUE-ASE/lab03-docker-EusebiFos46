@@ -26,7 +26,7 @@
 #       Hint:  ubuntu:24.04
 #
 # YOUR INSTRUCTION HERE
-ubuntu:24.04
+FROM ubuntu:24.04
 
 # D2 — Document who maintains the image (optional but good practice).
 #       Form:  LABEL key="value"
