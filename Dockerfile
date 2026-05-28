@@ -52,9 +52,13 @@ LABEL org.opencontainers.image.title="Lab 3 ARM builder"
 #       and deleting /var/lib/apt/lists/* keep the image small.
 #
 # YOUR RUN INSTRUCTION HERE
-RUN apt-get update \
- && apt-get install -y --no-install-recommends gcc-arm-none-eabi binutils-arm-none-eabi make \
- && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    gcc-arm-none-eabi \
+    binutils-arm-none-eabi \
+    make && \
+    rm -rf /var/lib/apt/lists/*
+
 
 
 # D4 — Set the working directory inside the container.
